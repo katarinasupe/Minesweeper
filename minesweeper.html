@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel = "icon" href ="logo.png" type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="minesweeper.js"></script>
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    <div class = "set_game">
+        Broj redaka:
+        <input type="text" id="num_rows" required> 
+        Broj stupaca:
+        <input type="text" id="num_cols" required>
+        Broj mina:
+        <input type="text" id="num_mines" required>
+        <button id = "start_game">Započni igru!</button>
+    </div>
+    <canvas id="board" width="600" height="400" style="border:1px solid #000000;">
+        <p>Nažalost vaš browser ne podržava canvas.</p>
+    </canvas>
+    <br>
+    <button id="new_game">Započni novu igru!</button>
+</body>
+</html>
